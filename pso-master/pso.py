@@ -51,6 +51,7 @@ def calculate_velocity(p, g_best, inertia, constrict_fact, v_fact, cog_fact, soc
 
 # Parametrizar o fator de constrição
 def PSO(bounds, objective, dim, max_iter=5000, num_p=30, inertia=1, constrict_fact=1, v_fact=1, cog_fact=1, social_fact=1):
+    
     if bounds[0] >= bounds[1]:
         raise Exception('Restrição de domínio inválida') 
     
